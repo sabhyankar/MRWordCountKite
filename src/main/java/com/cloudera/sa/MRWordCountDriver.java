@@ -29,7 +29,7 @@ public class MRWordCountDriver extends Configured implements Tool {
 
     public int run(String[] args) throws Exception {
         if (args.length != 2 ) {
-            System.err.printf("Usage: $s [generic options] <input path> <output path> \n", getClass().getName());
+            System.err.printf("Usage: %s [generic options] <input path> <output path> \n", getClass().getName());
             GenericOptionsParser.printGenericCommandUsage(System.err);
             System.exit(-1);
         }
